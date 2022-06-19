@@ -1,0 +1,97 @@
+* {
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #ff99ff, #ffff99);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+h1 {
+    text-align: left;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px black;
+}
+
+.container .title {
+    font-size: 30px;
+    font-weight: 1000;
+    position: relative;
+    text-align: center;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+}
+
+.container form .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .details .input-box {
+    width: calc(100% / 2 - 20px);
+}
+
+form .details .input-box input {
+    color: purple;
+    font-weight: 1000;
+    background: linear-gradient(to left, #ff99ff, #ffff99);
+    display: block;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    border-width: 3px;
+    outline: none;
+    transition-duration: 0.25s;
+}
+
+.details .input-box input:hover {
+    font-size: 20px;
+}
+
+.gender-details {
+    line-height: 20px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn input {
+    border-width: 2px;
+    border-color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to left, #ff99ff, #ffff99);
+    color: black;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.btn input:hover {
+    background: linear-gradient(to right, #ff99ff, #ffff99);
+}
+
+.cheat input {
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    margin-top: 10px;
+}
