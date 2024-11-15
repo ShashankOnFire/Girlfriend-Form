@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Girlfriend Form</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="./logo-red.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Register Now</div>
+        <form action="./thankyou.html">
+            <h1>Girlfriend Form</h1>
+            <div class="details">
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" placeholder="Enter your name..." id="name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone No</span>
+                    <input type="tel" placeholder="Enter your phone no..." id="phno" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your email id..." id="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Height</span>
+                    <input type="text" placeholder="Enter your Height..." id="height" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Nick Name</span>
+                    <input type="text" placeholder="Enter your nick name..." id="nickname" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Father's Income</span>
+                    <input type="number" placeholder="Enter your ayya sommu..." id="inc" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Weight</span>
+                    <input type="number" placeholder="Enter your weight..." id="inc" required>
+                </div>
+            </div><br>
+            <div class="gender-details">
+                <span class="genter-title">Gender</span>
+                <div class="category">
+                    <input type="checkbox" name="F" id="gender" value="F">
+                    <label for="F">F</label>
+                    <input type="checkbox" name="M" id="gender" value="F">
+                    <label for="M">F</label>
+                </div><br>
+            </div>
+            <div class="otr">
+                <div class="bar">
+                    <span>How iritating are you on a scale of 1 to 10</span>
+                    <br>
+                    <input type="range" name="bar" min="1" max="10" step="1" value="5" id="scale" required>
+                    <p id="outputt"></p>
+                </div><br>
+
+                <div class="cheat">
+                    <span class="details">How many guys you've cheated on in the past</span>
+                    <input type="number" placeholder="Enter the number..." id="cheat" required>
+                </div>
+            </div>
+            <br>
+            <div class="btn">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+        <button type="submit" id="btn">CHECK</button>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./database.js"></script>
+    <!--<script src="./index.py "></script>-->
+</body>
+
+</html>
